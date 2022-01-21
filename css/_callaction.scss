@@ -1,0 +1,32 @@
+.call-to-action{
+    width: 88%;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+    text-align: center;
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    .call-to-action{
+        margin: 15rem auto;
+        p{
+            width: 65%;
+            margin: 0 auto ; 
+            margin-bottom: 7rem;
+        }
+
+        .calls{
+        
+          .callout__btn{
+              display: inline;
+              padding: 2.3rem 6rem;
+
+              &:not(:last-child)
+              {
+                  margin-right: 3rem;
+              }
+          }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 	0.625rem;
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-size: 1.8rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    line-height: 1.4;
+    color: $grayishBlue;
+}
+
+h1,
+h2,
+h3 {
+    color: $darkGrayishBlue;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+p{
+    margin-bottom: 4.7rem;
+}
+
+a{
+  text-decoration: none;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.p-x{
+ padding-left: 18px;
+ padding-right: 18px;
+}
+
+.callout__btn{
+    padding: 1.5rem 3rem;
+    border-radius: 30px;
+    display: block;
+    color: #fff;
+}
+
+.ios{
+    background-color: $strongCyan;
+    box-shadow: 0px 6px 7px -1px #26baa487;
+    //TODO: Remove on desktop
+    margin-bottom: 1.5rem;
+}
+.mac{
+    background-color: $lightBlue;
+    box-shadow: 0px 5px 8px -2px #8d99fb;
+}
+
+@mixin flex-column-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    h1{
+        font-size: 5rem;
+
+    }
+    
+    h2{
+        font-size: 4rem;
+    }
+
+    h3{
+        font-size: 3rem;
+    }
+}

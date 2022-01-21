@@ -1,0 +1,62 @@
+.snippets{
+    margin: 8.9rem 0;
+    text-align: center;
+    padding: 0 2rem;
+ 
+    &__content{
+        img{
+            width: 100%;
+            //TODO: remove on desktop
+            margin-bottom: 3rem;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  
+    .snippets{
+
+        P{
+            width: 50%;
+            margin: 0 auto 4rem auto;
+        }
+
+        &__content{
+           margin-top: 10rem;
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+       
+             img{
+                 margin-left: -8rem;
+             }
+          .articles{
+
+              padding: 4rem;
+              text-align: left;
+
+              article{
+                  margin-bottom: 4rem;
+              }
+              
+              p{
+                  width: 60%;
+                  margin: 0;
+              }
+          }
+       
+        }
+
+    }
+    
+
+
+}
+
+
+@media screen and (min-width: 1440px) {
+    .snippets{
+        margin: 0 auto;
+    }
+}

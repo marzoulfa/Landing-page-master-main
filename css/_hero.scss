@@ -1,0 +1,65 @@
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.281),#fff),
+    url('../images/bg-header-mobile.png');
+    background-size: cover;
+    @include flex-column-center;
+    
+    &__content{
+        text-align: center;
+      
+
+        img{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 3.5rem;
+        }
+        h1{
+            //TODO: remove on desktop
+            span{
+              display: block;
+            }
+        }
+
+     
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .hero{
+
+        height: 70vh;
+
+        &__content{
+
+            img{
+                width: 20rem;
+                height: 20rem;
+            }
+            h1{
+              
+                span{
+                    display: inline;
+                  }
+            }
+
+            p{
+                width: 65%;
+                margin: 0 auto 6rem auto;
+                
+            }
+
+          
+
+            .callout__btn{
+               padding:2.3rem 6rem;
+                display: inline;
+              &:not(:last-child){
+                  margin-right: 2rem;
+              }
+            }
+        }
+      
+    }
+}
